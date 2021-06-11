@@ -1,0 +1,80 @@
+# site相关配置
+site_name: 雨下不停的wiki
+site_description: '雨下不停个人Wiki'
+site_author: 'lamber'
+
+theme:
+  # 指定使用material主题
+  name: material
+  # 禁用google font
+  font: false
+  # 颜色方案
+  palette:
+    # scheme是整个主题的颜色，slate是暗色，default是亮色
+    # primary这个是整个导航bar的颜色
+    # accent是影响一些强调属性颜色的，比如说超链接鼠标放上去的颜色，按键颜色，滚动条颜色等等
+    scheme: default
+    primary: green
+    accent: red
+  # 设置网站的语言，默认是en
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    # 自动展开左侧所有的子菜单，默认我现在用不到
+    # - navigation.expand
+    - navigation.top
+    - toc.integrate
+
+plugins:
+  - search
+  # - minify:
+  #     minify_html: true
+  # - git-revision-date-localized:
+  #     type: iso_datetime
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.highlight:
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: leops-china
+      repo: ansible-wiki
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.tabbed
+
+nav:
+  - JustGo:
+    - Go Pkgs:
+      - '1. Zap日志': mds/go/pkgs/zap/zap.md
+      - '2. Flag': mds/go/pkgs/flag/flag.md
