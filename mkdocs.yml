@@ -3,11 +3,18 @@ site_name: 雨下不停的wiki
 site_description: '雨下不停个人Wiki'
 site_author: 'lamber'
 
+# github
+repo_url: https://github.com/LamberMa/lamber.github.io.git
+repo_name: lamber/mkdocs-material
+
 theme:
   # 指定使用material主题
   name: material
+  # custom_dir: overrides
   # 禁用google font
   font: false
+  icon:
+    repo: fontawesome/brands/github
   # 颜色方案
   palette:
     # scheme是整个主题的颜色，slate是暗色，default是亮色
@@ -74,7 +81,11 @@ markdown_extensions:
   - pymdownx.tabbed
 
 nav:
-  - JustGo:
-    - Go Pkgs:
+  - Go开发:
+    - Go库学习:
       - '1. Zap日志': mds/go/pkgs/zap/zap.md
       - '2. Flag': mds/go/pkgs/flag/flag.md
+  - 运维监控:
+    - Prometheus:
+      - Exporters: 
+        - '编写Exporter': mds/monitor/prometheus/exporters/编写exporter.md
