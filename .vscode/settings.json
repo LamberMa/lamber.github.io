@@ -1,0 +1,50 @@
+{
+    // 编辑器相关配置
+    "window.zoomLevel": 0,
+    "editor.wordWrap": "on",
+    // 1秒钟自动保存
+    "files.autoSaveDelay": 1000,
+    "debug.console.fontSize": 20,
+    "debug.console.lineHeight": 30,
+    // 设置编辑器的字体大小
+    "editor.fontSize": 16, 
+    "terminal.integrated.fontSize": 16,
+    "http.proxy": "https://goproxy.cn",
+
+    // go语言相关配置
+    // 如果useLanguageServer设为true，那么在编写代码时引入本地没有的package时，会自动下载安装
+    // 就是有时候会非常卡，保存go的编码文件时偶尔会卡死。这点你们自己取舍吧
+    "go.useLanguageServer": true,
+    // 自动完善未引入的包
+    "go.autocompleteUnimportedPackages": true,
+    // 指定go使用的format工具包
+    "go.formatTool": "gofmt",
+    // 设置gopath和goroot
+    "go.goroot": "/usr/local/go",
+    "go.gopath": "/root/go",
+    "go.useCodeSnippetsOnFunctionSuggest": true,
+    "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
+    "go.inferGopath": false,
+    "go.docsTool": "gogetdoc",
+    "go.gocodePackageLookupMode": "go",
+    "go.gotoSymbol.includeImports": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.enabled": false,
+    "go.lintTool": "golint",
+    "go.gocodeAutoBuild": false,
+    //"go.toolsManagement.autoUpdate": true,
+    //"go.gotoSymbol.includeGoroot": true
+    //"go.gotoSymbol.includeImports": true
+    // "go.lintOnSave": "package",
+    
+    "go.testFlags": ["-v","-count=1"],
+    "go.buildTags": "",
+    "go.buildFlags": [],
+    "go.lintFlags": [],
+    "go.vetFlags": [],
+    "go.coverOnSave": false,
+    "gopls": {
+        "experimentalWorkspaceModule": true
+    },
+
+}

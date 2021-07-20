@@ -85,7 +85,30 @@ nav:
     - Go库学习:
       - '1. Zap日志': mds/go/pkgs/zap/zap.md
       - '2. Flag': mds/go/pkgs/flag/flag.md
+    - Go基础:
+      - 'Go关键字': mds/go/basic/关键字/index.md
+      - 'Go Type详解': mds/go/basic/gotype/index.md
+    - Go并发:
+      - '1. 并发简介': mds/go/concurrency/01-并发编程/01-并发编程初识/index.md
+      - '2. Goroutine': mds/go/concurrency/01-并发编程/02-goroutine/index.md
+      - '3. Channel': mds/go/concurrency/01-并发编程/03-channel/index.md
+    - Go进阶:
+      - '1. 项目开发规范': 
+        - '1. 规范简介': mds/go/advanced/开发规范/规范简介/index.md
+        - '2. 编写优雅Go项目': mds/go/advanced/开发规范/如何编写优雅的Go项目/index.md
+      - '2. 设计模式':
+        - '1. 简介': mds/go/advanced/设计模式/简介/index.md
+        - '2. 创建型模式': mds/go/advanced/设计模式/创建者模式/index.md
   - 运维监控:
     - Prometheus:
       - Exporters: 
         - '编写Exporter': mds/monitor/prometheus/exporters/编写exporter.md
+      - PrometheusOperator:
+        - 'PrometheusOperator介绍': mds/monitor/prometheus/operator/operator介绍/describe.md
+      - SNMP监控:
+        - 'SNMP Exporter': mds/monitor/prometheus/SNMP监控/SNMPExporter/index.md
+        - 'Config生成器': mds/monitor/prometheus/SNMP监控/configGenerator/index.md
+  - Linux运维:
+    - Shell编程:
+      - Shell重定向: mds/linux/shell/shell重定向/index.md
+      - Shell中的括号: mds/linux/shell/shell中的括号/index.md
