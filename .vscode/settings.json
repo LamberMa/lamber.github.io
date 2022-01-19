@@ -46,5 +46,6 @@
     "gopls": {
         "experimentalWorkspaceModule": true
     },
+    "git.ignoreLimitWarning": true,
 
 }
