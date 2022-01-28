@@ -10,7 +10,7 @@ repo_name: lamber/mkdocs-material
 theme:
   # 指定使用material主题
   name: material
-  # custom_dir: overrides
+  custom_dir: overrides
   # 禁用google font
   font: false
   icon:
